@@ -10,10 +10,10 @@ let input = fs.readFileSync('./1day/test.txt').toString().split('\n');
 // }
 let numN = input[0];
 const array = input[1].split(' ');
-for(let i=0; i<input.length; i++) {
-    
+const sum = 0;
+for(let i=0; i<array.length; i++) {
+    sum += array[i];
 }
-
 
 console.log('array', array);
 
