@@ -1,21 +1,18 @@
 // file system import
 let fs = require('fs');
 // file system 을 이용한 전체 입력 받기
-let input = fs.readFileSync('./1day/test.txt').toString().split('\n');
+let input = fs.readFileSync('./1day/test.txt').toString().trim().split('\n');
 
-//const array = input[0].split(' ')
-// let array = [];
-// for (let i=0; i<input.length; i++) {
-//     array.push(input[i]);
-// }
 let numN = input[0];
-const array = input[1].split(' ');
-const sum = 0;
+let array = input[1].split('');
+let sum = 0;
 for(let i=0; i<array.length; i++) {
-    sum += array[i];
+    sum += Number(array[i]);
 }
 
+
 console.log('array', array);
+console.log('sum', sum);
 
 
 // N개의 숫자가 공백없이 쓰여있다. 이 숫자를 모두 합해서 출력하는 프로그램 작성

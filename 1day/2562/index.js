@@ -1,7 +1,7 @@
 // file system import
 let fs = require('fs');
 // file system 을 이용한 전체 입력 받기
-let input = fs.readFileSync('./1day/test.txt').toString().split('\n');
+let input = fs.readFileSync('./1day/test.txt').toString().trim().split('\n');
 
 //const array = input[0].split(' ')
 // let array = [];
@@ -15,7 +15,7 @@ for(let i=0; i<input.length; i++) {
         maxValue = Number(input[i]);
     }
     if(maxValue === Number(input[i])) {
-        maxValueIndex = i;
+        maxValueIndex = i + 1;
         console.log('i',i);
     }
 }
