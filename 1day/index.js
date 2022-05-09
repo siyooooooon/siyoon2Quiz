@@ -3,12 +3,31 @@ let fs = require('fs');
 // file system 을 이용한 전체 입력 받기
 let input = fs.readFileSync('./1day/test.txt').toString().trim().split('\n');
 
+let studentCount = input[0];
+
+// for(let i = 2; i <= 9; i++) {
+//     console.log(i + '단');
+    
+//     for(let j = 1; j <= 9; j++) {
+//         console.log(i + ' * ' + j + ' = ' + (i*j));
+//     }
+// }
+
+for(let i = 1; i <= studentCount; i++) {
+    let array = input[i].split(' ');
+    console.log('array',array);
+    // console.log('array[0]',array[0]);
+    // console.log('array[1]',array[1]);
+    // console.log('array[2]',array[2]);
+    // console.log('array[3]',array[3]);
+    // console.log('array[4]',array[4]);
+    
+}
 
 
 
-
-
-// 오민식 선생님은 올해 형택초등학교 6학년 1반 담임을 맡게 되었다. 오민식 선생님은 우선 임시로 반장을 정하고 학생들이 서로 친숙해진 후에 정식으로 선거를 통해 반장을 선출하려고 한다. 그는 자기반 학생 중에서 1학년부터 5학년까지 지내오면서 한번이라도 같은 반이었던 사람이 가장 많은 학생을 임시 반장으로 정하려 한다.
+// 오민식 선생님은 올해 형택초등학교 6학년 1반 담임을 맡게 되었다. 오민식 선생님은 우선 임시로 반장을 정하고 학생들이 서로 친숙해진 후에 정식으로 선거를 통해 반장을 선출하려고 한다. 
+// 그는 자기반 학생 중에서 1학년부터 5학년까지 지내오면서 한번이라도 같은 반이었던 사람이 가장 많은 학생을 임시 반장으로 정하려 한다.
 // 그래서 오민식 선생님은 각 학생들이 1학년부터 5학년까지 몇 반에 속했었는지를 나타내는 표를 만들었다. 예를 들어 학생 수가 5명일 때의 표를 살펴보자.
 
 //  	1학년	2학년	3학년	4학년	5학년
