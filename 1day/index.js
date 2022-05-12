@@ -1,79 +1,55 @@
 // file system import
+const { transcode } = require('buffer');
 let fs = require('fs');
+const { format } = require('path');
 // file system 을 이용한 전체 입력 받기
 let input = fs.readFileSync('./1day/test.txt').toString().trim().split('\n');
 
-let array = [];
+let countArray = [];
+let trainCount = 0;
+let maxCount = 0;
 
 for(let i = 0; i < input.length; i++) {
-    array[i] = input[i].split(' ');
+    countArray[i] = input[i].split(' ');
 }
-
-let maxValue = 0;
-let numX = 0;
-let numY = 0;
-
 for(let i = 0; i < input.length; i++) {
-    for (let j = 0; j < input[i].length; j++) {
-        if(Number(maxValue) < Number(array[i][j])) {
-            maxValue = array[i][j];
-            numX = i;
-            numY = j;
-        }
+    for(let j = 0; j < input[i].length; j++) {
+
+        //trainCount = trainCount + countArray[i][1] - countArray[i][0];
+
+        console.log(i,j);
+        console.log(countArray[i][j]);
+        
+        // if(Number(trainCount) > Number(maxCount)) {
+        //     maxCount = trainCount;
+        // }
+        //console.log('traincount',trainCount);
     }
 }
-console.log(`${maxValue}\n${numX + 1} ${numY + 1}`);
+// console.log(trainCount)
+// console.log(countArray);
 
-    // for(let j = 0; j < array[i].length; j++) {
-    //     resultArray[i][j] = array[j][i];
-    //     console.log(resultArray);
-    // }
-// console.log(array[1][7]);
-
-
-
-// for(let i = 0; i < input.length; i++) {
-//     let array = [];
-//     let result = [];
-//     for(let j = 0; j < input[i].length; j++) {
-//         array = input[i].split(' ');
-//         // resultArray[i][j] = input[j][i];
-//         // let maxValue = array[0];
-//         // if(maxValue < Number(array[i])) {
-//         //     maxValue = Number(array[i]);
-//         //     // console.log('maxValue', maxValue);
-//         // }
-         
-//     }
-//     result = [array[i]];   
-//     console.log(result);
-//     //console.log('result',result);
-//     //console.log(array);
-//     //const resultArray = Array.from(Array(array.length),() => new Array(array[0].length));
-//     //console.log('result', resultArray);
-    
-// }
-
-// const resultArray = Array.from(Array(array.length),() => new Array(array[0].length));
-// console.log('result', resultArray);
-
-
-
-
+// console.log(countArray[0][0]);
+// console.log(countArray[0][1]);
+// console.log(countArray[1][0]);
+// console.log(countArray[1][1]);
+// console.log(countArray[2][0]);
+// console.log(countArray[2][1]);
+// console.log(countArray[3][0]);
+// console.log(countArray[3][1]);
+// console.log(countArray[4][0]);
+// console.log(countArray[4][1]);
+// console.log(countArray[5][0]);
+// console.log(countArray[5][1]);
+// console.log(countArray[6][0]);
+// console.log(countArray[6][1]);
+// console.log(countArray[7][0]);
+// console.log(countArray[7][1]);
 
 // for(let i = 0; i < input.length; i++) {
-
-//     let array = [];
-    
-//     for(let j = 0; j < input[i].length; j++) {
-//         array = input[i].split(' ');
-//         // let maxValue = array[0];
-//         // if(maxValue < Number(array[i])) {
-//         //     maxValue = Number(array[i]);
-//         //     // console.log('maxValue', maxValue);
-//         // }
-//     }
-    
+//     trainCount[i] = input[i].split(' ');
 // }
-// const resultArray = Array.from(Array(array.length),() => new Array(array[0].length));
-// console.log('result', resultArray);
+// let array = [];
+// for(let i = 0; i < trainCount.length; i++) {
+//     array.push(trainCount[i]);
+// }
