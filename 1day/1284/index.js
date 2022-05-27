@@ -3,18 +3,30 @@ let fs = require('fs');
 // file system 을 이용한 전체 입력 받기
 let input = fs.readFileSync('./1day/test.txt').toString().trim().split('\n');
 
-console.log(input);
+console.log('input', input)
 
-for(let i = 0; i < input.length; i++) {
-    // let array = input[i].split('');
-    let array = input[i].split('');
-    console.log('array',array);
+let array = [];
+const basicNum = 2;
 
-    if(input[i] === 0) {
-        break;
-    }
+for(let i = 0; i < input.length - 1; i++) {
+    array.push(input[i].trim().split(''));
 }
-
+let signBoard = 0;
+for(let i = 0; i < array.length; i++) {
+    for(let j = 0; j < array[i].length; j++) {
+        signBoard += 3;
+        if(parseInt(array[i][j]) === 1) {
+            signBoard -= 1;
+        }
+        if(parseInt(array[i][j]) === 0) {
+            signBoard += 1;
+        }
+    }
+    signBoard += array[i].length - 1;
+    //console.log(`${signBoard + basicNum}\n`);
+    console.log(signBoard + basicNum);
+    signBoard = 0;
+}
 
 
 // 재석이는 대문에 붙이는 (주소를 나타내는) 호수판 제작업체의 직원이다. 고객에게 전달할 호수판은 숫자와 숫자 사이 그리고 왼쪽 오른쪽으로 적당히 여백이 들어가 줘야하고 숫자마다 차지하는 간격이 조금씩 상이하다. 다행이도 규칙은 매우 간단하다. 
