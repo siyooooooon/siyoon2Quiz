@@ -12,8 +12,9 @@ for(let i = 0; i < array.length; i++) {
 	for(let j = 0; j < input.length; j++) {
 		if(array[i] === input[j]) {
             array.splice(i, 1, j);
-		}
+		} else if(input[j] === input.length - 1) {
+            array.splice(i, 1, -1);
+        }
 	} 
-
 }
 console.log('array', array);
