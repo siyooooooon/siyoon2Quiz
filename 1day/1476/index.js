@@ -4,55 +4,36 @@ let fs = require('fs');
 //let input = fs.readFileSync('./1day/test.txt').toString().trim().split(' ');
 let input = fs.readFileSync('./1day/test.txt').toString().trim().split(' ');
 
-// let result = '';
-// for(let i = 0; i < input.length; i++) {
-//     result += input[i];
-//     if (result.length === 10) {
-//         console.log(result);
-//         result = '';
-//     }
-// }
-// console.log(result);
+let numberE = Number(input[0]);
+let numberS = Number(input[1]);
+let numberM = Number(input[2]);
 
-// let numberE = Number(input[0]);
-// let numberS = Number(input[1]);
-// let numberM = Number(input[2]);
-// let numberE = input[0];
-// let numberS = input[1];
-// let numberM = input[2];
+let E = 0;
+let S = 0;
+let M = 0;
+let year = 0;
 
-//let jWorld = '';
+for (;true;) {
+    if(numberE === E && numberS === S && numberM === M ) {
+        break;
+    } 
+    E += 1;
+    S += 1;
+    M += 1;
+    year += 1;
+ 
+    if(E > 15 ) {
+        E -= 15;
+    } 
+    if (S > 28) {
+        S -= 28;
+    }
+    if (M > 19) {
+        M -= 19;
+    }
+}
+console.log(year);
 
-
-// if(numberE > 15 && numberS > 28 && numberM > 19) {
-//     numberE -= 15;
-//     numberS -= 28;
-//     numberM -= 19;
-//     console.log(numberE, numberS, numberM);
-// } else {
-//     console.log(numberE, numberS, numberM);
-// }
-
-
-// function countYear(numberE,numberS,numberM) {
-
-//     while(numberE++ && numberS++ && numberM++) {
-
-//         if(numberE > 15) {
-//             numberE -= 15;
-//         } else if (numberS > 28) {
-//             numberS -= 28;
-//         } else if ( numberM > 19) {
-//             numberM -= 19;
-//         }
-//         console.log(numberE, numberS, numberM);
-//     }
-// }
-// countYear();
-
-let numberE = input[0];
-let numberS = input[1];
-let numberM = input[2];
 
 
 
