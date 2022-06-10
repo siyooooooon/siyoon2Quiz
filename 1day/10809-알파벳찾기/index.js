@@ -9,22 +9,26 @@ console.log(input);
 const array = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 let result = [];
 
-for(let i = 0; i < array.length; i++) {
-	for(let j = 0; j < input.length; j++) {
-		if(array[i] === input[j]) {
-            array.splice(i, 1, j);
+for(let i = 97; i <= 122; i++) {
+    answer.push(-1);
+}
+for(let i = 0; i < input.length; i++) {
+	for(let j = 0; j < array.length; j++) {
+		if(input[i] === array[j]) {
+            result[j] = input.indexOf(input[j]);
+            //array.splice(i, 1, j);
             //console.log(j);
             // result.push(j);
-            break;
+            //break;
 		}
 	}
-    result.push(array[i]);
+ 
     //console.log(array[i]);
     //result.push(i, 0, -1);
     //array.splice(i, 0, -1);
     //result = array.join('');
 }
-
+   console.log(result.join(' ').trim());
 // console.log('result', result);
 // console.log('array', array);
 //
