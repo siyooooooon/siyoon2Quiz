@@ -6,11 +6,13 @@ let input = fs.readFileSync('./1day/test.txt').toString().trim().split('\n');
 
 console.log(input);
 
-const testCase = input[0];
 
-for(let i = 1; i <= testCase; i++ ) {
-    console.log(input[i].toLowerCase());
-}
+
+
+
+
+
+
 
 
 
