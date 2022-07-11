@@ -63,3 +63,24 @@ console.log('diceNumber',diceNumber);
 //     }
 // }
 
+// console.log('input',input);
+// const player = input[0];
+// input.shift();
+// console.log('input',input);
+// let count = 0;
+// let diceNumber = 0;
+// let array = [];
+// let priceArr = [];
+// console.log(player);
+// for(let i = 0; i < input.length; i++) {
+//     let array = input[i].split(' ');
+//     console.log('arr',array);
+//     for(let j = 0; j < array.length; j++) {
+//         console.log('i',array[i]);
+//         console.log('j',array[j]);
+//         if(array[i] ) {
+
+//         }
+//     }
+// }
+
