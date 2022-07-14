@@ -6,24 +6,66 @@ const { workerData, resourceLimits } = require('worker_threads');
 let input = require('fs').readFileSync('./1day/test.txt').toString().trim().split('\n');
 
 console.log(input);
-const currentTime = input[0].split(' ');
-const cookTime = parseInt(input[1]);
-//let hour = parseInt(currentTime[0]);
-let [H, M, S] = currentTime;
-let toHour = 0;
-let toMinute = 0;
-let toSecond = 0;
-if(cookTime >= 3600) {
-    toHour = parseInt(cookTime / 3600);
-    toMinute = parseInt(cookTime % 3600);
-    console.log('tohour',toHour);
-    console.log('toMinute',toMinute);
+const numT = Number(input[0]);
+input.shift();
+let array = input[0].trim().split(' ');
+
+for(let i = 0; i < array.length; i++) {
+    let arrDivision = [];
+    console.log(array[i]);
+    for(let j = 1; j <= array[i]; j++) {
+        if(array[i] % j === 0) {
+            arrDivision.push(j);
+        }
+    }
+    console.log(arrDivision);
+    
 }
-let resultMinute = parseInt(toMinute / 60);
-console.log('resultMinute',resultMinute);
+function plus(array) {
+        
+}
+// array.forEach((value) => {
+//     for(let i = 1; i <= value; i++) {  
+//         if(value % i === 0) {
+//             arrayD.push(i);
+//         }
+
+//     }
+// });
+// console.log(arrayD);
 
 
 
+// function number(arr) {
+//     let arrayD = [];
+//     let result = [];
+//     arr.forEach((value) => {
+//         for(let i = 1; i <= value; i++) {
+            
+//             if(value % i === 0) {
+//                 arrayD.push(i);
+//             }
+//         }
+//     });
+// }
 
-console.log(H,M,S);
-console.log(typeof H);
+// function average(arr) {
+//     let sum = 0;
+//     arr.forEach((value) => {
+//         sum += parseInt(value);
+//     });
+
+//     return sum / arr.length;
+// }
+
+// function result(strArr) {
+//     const arr = strArr.split(' ');
+//     const A = parseInt(arr[0]);
+//     const B = parseInt(arr[1]);
+
+//     if (A > B) {
+//         aCount++;
+//     } else if (A < B) {
+//         bCount++;
+//     }
+// }

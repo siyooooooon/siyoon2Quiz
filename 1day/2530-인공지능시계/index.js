@@ -42,3 +42,25 @@ console.log(`${resultHour} ${resultMinute} ${resultSecond}`);
 // console.log('resultMinute',resultMinute);
 // console.log('takeHour',takeHour);
 // console.log('resultHour',resultHour);
+
+// const currentTime = input[0].split(' ');
+// const cookTime = parseInt(input[1]);
+// //let hour = parseInt(currentTime[0]);
+// let [H, M, S] = currentTime;
+// let toHour = 0;
+// let toMinute = 0;
+// let toSecond = 0;
+// if(cookTime >= 3600) {
+//     toHour = parseInt(cookTime / 3600);
+//     toMinute = parseInt(cookTime % 3600);
+//     console.log('tohour',toHour);
+//     console.log('toMinute',toMinute);
+// }
+// let resultMinute = parseInt(toMinute / 60);
+// console.log('resultMinute',resultMinute);
+
+
+
+
+// console.log(H,M,S);
+// console.log(typeof H);
