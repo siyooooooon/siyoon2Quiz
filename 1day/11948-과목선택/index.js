@@ -32,3 +32,30 @@ function plus(arr) {
 console.log('plus',plus(arrayA));
 console.log('plusinput',plus(input));
 console.log('plusinput',plus(input) + plus(arrayA) - minValueA - minValueB);
+
+
+// 찬구
+// let fs = require('fs');
+// let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n').map(i => parseInt(i));
+
+// let sum = input.reduce((accumulator, current) => accumulator + current, 0);
+
+// let candArr = []
+
+// for (let i = 0; i <= 3; i++) {
+//     const sciScore = input[i];
+
+//     for (let j = 4; j <= 5; j++) {
+//         const etcScore = input[j];
+
+//         let candScore = sum;
+//         candScore -= sciScore
+//         candScore -= etcScore
+
+//         candArr.push(candScore)
+//     }
+// }
+
+// let answer = candArr.sort((a, b) => a - b).pop();
+
+// console.log(answer)
