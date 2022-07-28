@@ -23,3 +23,12 @@ input.forEach((value) => {
     chickenNum = chicken - regs;
     console.log(`${regs} ${chickenNum}`);
 });
+
+
+//명수
+// let [[N],...input] = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n').map(i=>i.split(" ").map(Number));
+// while(N--){
+//     let arr = input.shift();
+//     let n = arr[0]-arr[1];
+//     console.log(`${arr[1]-n} ${n}`);
+// }
