@@ -25,3 +25,7 @@ for(let i = 0; i < numberN + 2; i++) {
     }
    console.log(square);
 }
+
+// @@@
+// @ @
+// @@@
