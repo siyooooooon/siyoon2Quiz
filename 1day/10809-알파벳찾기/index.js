@@ -32,3 +32,18 @@ for(let i = 0; i < input.length; i++) {
 // console.log('result', result);
 // console.log('array', array);
 //
+
+// const array = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+// let result = [];
+
+// for(let i = 1; i <= 26; i++) {
+//     result.push(-1);
+// }
+// for(let i = 0; i < input.length; i++) {
+// 	for(let j = 0; j < array.length; j++) {
+// 		if(input[i] === array[j]) {
+//             result[j] = input.indexOf(input[i]);
+// 		}
+// 	}
+// }
+// console.log(result.join(' ').trim());

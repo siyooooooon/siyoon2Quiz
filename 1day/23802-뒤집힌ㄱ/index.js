@@ -25,3 +25,37 @@ for(let i = 1; i <= num * 5; i++) {
     }
     console.log(V);
 }
+
+// 찬구
+// let res = ''
+
+// for (let i = 1; i <= N; i++) {
+//     res += '@'.repeat(N * 5)
+//     res += '\n'
+// }
+
+// for (let i = 1; i <= N * 4 ; i++) {
+//     res += '@'.repeat(N)
+
+//     if(i !== N * 4) {
+//         res += '\n'
+//     }
+// }
+
+// console.log(res)
+
+// 아라
+// let result = '';
+
+// for(let i=0; i<5*num; i++) {
+//     for(let j=0; j<5*num; j++) {
+//         if(i >= num && j >= num) {
+//             result += '';
+//         } else {
+//             result += '@';
+//         }
+//     }
+//     result += '\n';
+// }
+
+// console.log(result);

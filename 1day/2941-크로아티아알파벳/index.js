@@ -23,9 +23,20 @@ for(let i = 0; i < Croatian.length; i++) {
 }
 console.log('result',result);
 
+// 답
+// console.log(input);
 
+// input = input[0];
 
+// solution(input)
 
+// function solution(str) {
+//     let croatia = ["c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="];
+//     for (let alphabet of croatia) {
+//         str = str.split(alphabet).join("Y");
+//     }
+//     console.log(str.length);
+// }
 
 
 

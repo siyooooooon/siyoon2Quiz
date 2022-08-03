@@ -27,7 +27,7 @@ let input = require('fs').readFileSync('./1day/test.txt').toString().trim().spli
 //     console.log('minus',flatArr);
 // }
 // //console.log(Number((flatArr[0] / flatArr[2]) + (flatArr[1] / flatArr[3])));
-// console.log('result',result);
+// console.log('result',result);=
 // const maxValue = Math.max(...result);
 // console.log(result.indexOf(maxValue));
 
@@ -47,7 +47,7 @@ flatArr.push(value); // 배열 순서 바꿔주기
 console.log(flatArr);
 let result = [];
 for(let i = 0; i < 4; i++) {
-    result.push(parseInt((flatArr[0] / flatArr[3]) + (flatArr[1] / flatArr[2])));
+    result.push(Number((flatArr[0] / flatArr[3]) + (flatArr[1] / flatArr[2])));
     console.log('resultarray',flatArr[0] ,flatArr[3],flatArr[1], flatArr[2]);
     flatArr.unshift(flatArr[3]);
     flatArr.splice(4, 1);
@@ -55,4 +55,4 @@ for(let i = 0; i < 4; i++) {
 }
 console.log('result',result);
 const maxValue = Math.max(...result);
-console.log(parseInt(result.indexOf(maxValue)));
+console.log(result.indexOf(maxValue));
